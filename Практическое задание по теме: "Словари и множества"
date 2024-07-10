@@ -1,0 +1,15 @@
+my_dict = {'a':1,'b':2}
+print(my_dict)
+my_dict['a']
+print(my_dict.get('c'))
+my_dict.setdefault('c')
+my_dict.setdefault('d')
+my_dict.pop('b')
+print(my_dict)
+
+my_set = set([1,1,1,1,2,'2','2',3,4,4,56,7,8])
+print(my_set)
+my_set.add(False)
+my_set.add('DSFSDFDSF')
+my_set.pop()
+print(my_set)
