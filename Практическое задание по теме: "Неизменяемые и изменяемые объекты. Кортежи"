@@ -1,0 +1,6 @@
+immutable_var = (True, 'dasdasd', 243, 23.1)
+print(immutable_var)
+#immutable_var[0] ='sad' #Кортежи — это неизменяемый тип данных в Python, который используется для хранения упорядоченной последовательности элементов.
+mutable_list = [True, 'dasdasd', 243, 23.1]
+mutable_list.append('dhhhhh')
+print(mutable_list)
