@@ -1,0 +1,14 @@
+my_list = [42, 69, 0, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+k=0
+while my_list:
+  if len(my_list)!=k:
+    a=my_list[k]
+    if a>0 and len(my_list)!=0:
+      print(a)
+      k=k+1
+    elif a==0:
+      my_list.remove(a)
+    else:
+      break
+  else:
+    break
