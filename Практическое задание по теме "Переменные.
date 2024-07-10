@@ -1,0 +1,5 @@
+int_number = 12
+float_number = 1.5
+name_course = 'Python'
+average_value = float_number/int_number
+print(f'Курс:{name_course}, всего задач: {int_number}, затрачено часов: {float_number}, среднее время выполнения {average_value}')
