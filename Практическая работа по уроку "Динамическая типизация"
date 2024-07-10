@@ -1,0 +1,7 @@
+name = str("Евгений")
+print(name)
+age = int(46)
+print(age)
+age = age + 1
+print(age)
+is_student = True
