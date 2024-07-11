@@ -1,0 +1,12 @@
+#1st program
+print(9**(0.5)*5)
+#2nd program
+print(9.99>9.98 and 1000!=1001)
+#3rd program
+number_1 = 1234
+number_2 = 5678
+print(number_1//10%100 + number_2//10%100)
+#4th program
+number_3=13.42
+number_4=42.13
+print(number_3*100//100==number_4*100%100)
