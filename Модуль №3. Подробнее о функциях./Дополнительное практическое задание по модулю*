@@ -1,0 +1,29 @@
+def calculate_structure_sum(data):
+    total_sum = 0
+    total_length = 0
+
+    stack = [data]
+    while stack:
+        current = stack.pop()
+        if isinstance(current, (list, tuple, set)):
+            stack.extend(current)
+        elif isinstance(current, dict):
+            stack.extend(current.keys())
+            stack.extend(current.values())
+        elif isinstance(current, str):
+            total_length += len(current)
+        elif isinstance(current, (int, float)):
+            total_sum += current
+
+    return total_sum + total_length
+
+data_structure = [
+  [1, 2, 3],
+  {'a': 4, 'b': 5},
+  (6, {'cube': 7, 'drum': 8}),
+  "Hello",
+  ((), [{(2, 'Urban', ('Urban2', 35))}])
+]
+
+result = calculate_structure_sum(data_structure)
+print(result)
